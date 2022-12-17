@@ -21,6 +21,16 @@ function newItem(src, left, bottom) {
 })
 }
 
+for (x = 0; x<window.innerWidth; x+=100) {
+    for (y = 0; y<600; y+=100) {
+        newImage('grass.png', x + 'px', y + 'px')
+    }
+    for (y = 600; y<window.innerHeight; y+=100) {
+        newImage('sky.png', x + 'px', y + 'px')
+    }
+}
+
+
 newImage('green-character.gif', '100px', '100px')
 newImage('pine-tree.png', '450px', '200px')
 newImage('tree.png', '200px', '300px')
@@ -31,3 +41,6 @@ newImage('well.png', '500px', '425px')
 newItem('sword.png', '500px', '405px')
 newItem('shield.png', '165px', '185px')
 newItem('staff.png', '600px', '100px')
+
+    console.log(window.innerWidth)
+    console.log(window.innerHeight)
