@@ -8,6 +8,19 @@ function newImage(src, left, bottom) {
 
 }
 
+function newItem(src, left, bottom) {
+    let item = document.createElement('img')
+    item.src = 'assets/' + src
+    item.style.position = 'fixed'
+    item.style.left = left
+    item.style.bottom = bottom
+    document.body.append(item)
+
+    item.addEventListener('dblclick', function(){
+    item.remove()
+})
+}
+
 newImage('green-character.gif', '100px', '100px')
 newImage('pine-tree.png', '450px', '200px')
 newImage('tree.png', '200px', '300px')
