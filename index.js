@@ -27,3 +27,7 @@ newImage('tree.png', '200px', '300px')
 newImage('pillar.png', '350px', '100px')
 newImage('crate.png', '150px', '200px')
 newImage('well.png', '500px', '425px')
+
+newItem('sword.png', '500px', '405px')
+newItem('shield.png', '165px', '185px')
+newItem('staff.png', '600px', '100px')
